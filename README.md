@@ -12,7 +12,7 @@ Dans cette partie, le responsable Hardware va devoir choisir et implementer les 
 
 2) Partie Software : 
 
-Dans cette partie, le responsable Software va devoir modifier le programme main.c 
+Dans cette partie, le responsable Software va devoir modifier le programme main.c envoyé sur le processeur. Celui-ci permet d'afficher les informations reçues par la partie Hardware. En d'autres mots, 
 
 
 
