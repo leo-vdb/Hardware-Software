@@ -12,7 +12,7 @@ Dans cette partie, le responsable Hardware va devoir choisir et implementer les 
 
 2) Partie Software : 
 
-Dans cette partie, le responsable Software va devoir modifier le programme main.c envoyé sur le processeur. Celui-ci permet d'afficher les informations reçues par la partie Hardware. En d'autres mots, 
+Dans cette partie, le responsable Software va devoir modifier le programme main.c envoyé sur le processeur. Celui-ci permet d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la fréquence determinée grâce au compteur et au lecteur de fréquence. De plus, le responsable devra connecter le processeur à l'ordinateur, d'y envoyer les programmes nécessaires et de le faire fonctionner. Pour finir, il faudra lire les signaux reçus via le processeur à partir de l'oscilloscope. 
 
 
 
