@@ -8,7 +8,13 @@ Ce dernier va être diviser en 2 parties principales : l'Hardware et le Software
 
 1) Partie Hardware :
 
-Dans cette partie, le responsable Hardware va devoir choisir et implementer les I/O dans la fonctionnalité "Platform Designer" du logiciel "Quartus". De plus, il doit compléter le "FPGA_TOP" pour ajouter le bloc relatif à ce projet contenant les I/O, clk, rst, ... utilisés.
+Dans cette partie, le responsable Hardware va devoir choisir et implementer les I/O dans la fonctionnalité "Platform Designer" du logiciel "Quartus" tel que le démontre la figure suivante :
+
+![Platform_Designer](Platform_Designer_System_Content.png)
+
+
+
+De plus, il doit compléter le "FPGA_TOP" pour ajouter le bloc relatif à ce projet contenant les I/O, clk, rst, ... utilisés comme dans la figure suivante :
 
 ![FPGA_TOP](modif_FPGA_TOP.png)
 
