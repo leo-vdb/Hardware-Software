@@ -11,7 +11,7 @@ architecture behavior  of ServoIn_TB is
 
 	constant PERIOD : time := 20 ns;
 
-	component ServoIn
+	component ServoIn -- Ce qu'on va tester dans ce code
 		port (
 			CLK							: in std_logic;
 			RST							: in std_logic;
@@ -26,7 +26,7 @@ architecture behavior  of ServoIn_TB is
 
 	for DUT: ServoIn use entity work.ServoIn(RTL);
 	
-	signal sCLK	  : std_logic := '0';
+	signal sCLK	  : std_logic := '0'; --création de signal pour tester notre driver
 	signal sRST	  : std_logic := '0';
 	signal sPULSE_from_GPIO_0_1_in : std_logic;
 	signal sDATA_to_pio_reg_in_1 : std_logic_vector(7 downto 0):= "00000000";
@@ -37,7 +37,7 @@ begin
 
 	DUT: ServoIn
 		port map (
-			RST 	=> sRST,
+			RST 	=> sRST,  --on fait entrer SRST dans le port RST
 			CLK 	=> sCLK,
 			PULSE_from_GPIO_0_1_in		=> sPULSE_from_GPIO_0_1_in,
 			DATA_to_pio_reg_in_1 => sDATA_to_pio_reg_in_1,
@@ -48,7 +48,7 @@ begin
 		
 		
 		
-	P_sCLK: process
+	P_sCLK: process  --explication du fonctionnement de la clock
 	begin -- 50MHz clock
 		sCLK <= not sCLK;
 		wait for PERIOD/2;
