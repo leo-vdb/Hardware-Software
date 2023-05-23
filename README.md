@@ -47,7 +47,10 @@ Ainsi on peut observer la valeur de l'angle.
 
 2) Partie Software : 
 
-Dans cette partie, le responsable Software va devoir créer la foction permettant de lire les données envoyées par la partie Hardware et de transformer ces données en valeur d'angle dans le fichier "driver.c". Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. De plus, le responsable devra connecter le processeur à l'ordinateur, d'y envoyer les programmes nécessaires et de le faire fonctionner. Pour finir, il faudra lire les signaux reçus via le processeur à partir de l'oscilloscope. 
+Dans cette partie, le responsable Software va devoir créer la foction permettant de lire les données envoyées par la partie Hardware et de transformer ces données en valeur d'angle dans le fichier "driver.c". Cette fonction s'appelle "servo_robert()" et se définit comme suit : 
+
+
+Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. De plus, le responsable devra connecter le processeur à l'ordinateur, d'y envoyer les programmes nécessaires et de le faire fonctionner. Pour finir, il faudra lire les signaux reçus via le processeur à partir de l'oscilloscope. 
 
 
 
