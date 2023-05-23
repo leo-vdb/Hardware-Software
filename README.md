@@ -10,7 +10,7 @@ Ce dernier va être diviser en 2 parties principales : l'Hardware et le Software
 
 Dans cette partie, le responsable Hardware va devoir choisir et implementer les I/O dans la fonctionnalité "Platform Designer" du logiciel "Quartus" tel que le démontre la figure suivante :
 
-![Platform_Designer](Platform_Designer_System_Content.png)
+![Platform_Designer](Platform_Designer_System_Content.PNG)
 
 
 
