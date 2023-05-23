@@ -137,9 +137,9 @@ module FPGA_TOP (
 
       ///////// SW /////////
       input       [3:0]  SW,
-		input PULSE_from_GPIO_0_1_in,
-		output DATA_to_pio_reg_in_1,
-		output DATA_to_pio_reg_in_2
+		input PULSE_from_GPIO_0_1_in, // on déclare l'entrée "PULSE_from_GPIO_0_1_in"
+		output DATA_to_pio_reg_in_1, // on déclare la sortie "DATA_to_pio_reg_in_1"
+		output DATA_to_pio_reg_in_2 // on déclare la sortie "DATA_to_pio_reg_in_2"
 );
 
 //=======================================================
@@ -207,14 +207,14 @@ wrapper I_wrapper (
 	.CLK					( CLK_50 ),
 	.RST					( 1'b0 ),
 	.LED					( wrapper_LED ),
-	.SW						( SW_wrapper ),
-	.KEY					( KEY_wrapper ),
+	//.SW						( SW_wrapper ),  // commentaire des lignes inutiles
+	//.KEY					( KEY_wrapper ),
 	.from_GPIO_0_1_in		( from_GPIO_0_1_in ),
-	.from_GPIO_0_0_inout	( from_GPIO_0_0_inout ),	
-	.to_GPIO_0_0_inout 		( wrapper_gpio_0_0_inout ),	
-	.to_gpio_1_0_out		( GPIO_1[0] ),
-	.from_pio_reg_out		( pio_reg_out_wrapper ),
-	.from_pio_reg_inout		( pio_reg_inout_wrapper ),
+	//.from_GPIO_0_0_inout	( from_GPIO_0_0_inout ),	
+	//.to_GPIO_0_0_inout 		( wrapper_gpio_0_0_inout ),	
+	//.to_gpio_1_0_out		( GPIO_1[0] ),
+	//.from_pio_reg_out		( pio_reg_out_wrapper ),
+	//.from_pio_reg_inout		( pio_reg_inout_wrapper ),
 	.to_pio_reg_in			( wrapper_pio_reg_in ),
 	.to_pio_reg_inout		( wrapper_pio_reg_inout )
 );
