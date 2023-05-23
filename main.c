@@ -42,7 +42,7 @@ int main() {
 	int i =0;
 	int n= 0;
 	
-	printf("------DEMARRAGE----------\r\n")
+	printf("------DEMARRAGE----------\r\n");
 	while(1){				//tourne en boucle et pour arrêter -> débrancher 
 	servo_robert(); //appel de la fonction qui est dans le driver.c   ATTENTION à bien déclarer la fonction dans driver.h
 }
