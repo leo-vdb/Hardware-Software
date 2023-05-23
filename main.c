@@ -43,7 +43,7 @@ int main() {
 	int n= 0;
 	
 	printf("------DEMARRAGE----------\r\n")
-	while(1){
+	while(1){				//tourne en boucle et pour arrêter -> débrancher 
 	servo_robert(); //appel de la fonction qui est dans le driver.c   ATTENTION à bien déclarer la fonction dans driver.h
 }
 
@@ -51,7 +51,7 @@ int main() {
 return;
 }
 
-void test_all() {	
+/*void test_all() {	
 	
 	unsigned int dipsw_reg = 0;
 	unsigned int key_pio_reg = 0;
@@ -107,4 +107,4 @@ void test_all() {
 		// usleep(100*1000);
 	// }
 		
- }
+ } */
