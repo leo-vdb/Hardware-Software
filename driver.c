@@ -48,7 +48,7 @@ unsigned int read_pio_reg_in() {
 	return pio_reg_in;
 }
 
-void servo_robert(){
+void servo_robert(){				//définition de la fonction permettant de transformer en angle, les données reçues (0 à 255) du Hard en  
 	unsigned int robert = PIO_REG_IN_read();
 	int angle = robert*180/255;
 	printf("Angle:\n%d", angle);
