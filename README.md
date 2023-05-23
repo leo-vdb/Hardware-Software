@@ -28,6 +28,20 @@ Ensuite, il devra écrire un programme mettant en place un compteur et un lecteu
 
 Enfin, il devra créer un TestBench afin de simuler le comportement du programme cité ci-dessus.
 
+Le signal à une période 20 ms comme on peut voir à l'image suivante : 
+![période](rtlview_période20ms.png)
+
+Ensuite, les pulsations doivent durer entre 1 et 2 ms, ce qui est confirmé dans les images suivantes : 
+
+![1ms](RTL_Simu_sPulsefromGPIO_1ms.png)
+![1,5ms](RTL_Simu_sPulsefromGPIO_15ms.png)
+![2ms](RTL_Simu_sPulsefromGPIO_2ms.png)
+
+Et donc grâce au compteur de 8 bits, on retrouve la valeur de notre angle : 
+
+![angle](RTL_Simu_Longueur_signal_Data_to_pin_reg_1_angle.png)
+
+Ainsi on peut observer la valeur de l'angle. 
 
 
 
