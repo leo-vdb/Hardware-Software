@@ -10,7 +10,7 @@ Ce dernier va être diviser en 2 parties principales : l'Hardware et le Software
 
 Dans cette partie, le responsable Hardware va devoir choisir et implementer les I/O dans la fonctionnalité "Platform Designer" du logiciel "Quartus". De plus, il doit compléter le "FPGA_TOP" pour ajouter le bloc relatif à ce projet contenant les I/O, clk, rst, ... utilisés.
 
-![FPGA_TOP](modif FPGA_TOP.png)
+![FPGA_TOP](modif_FPGA_TOP.png)
 
 Ensuite, il devra écrire un programme mettant en place un compteur et un lecteur de fréquence. Celui-ci est le lien entre les parties Hardware et Software. Le compteur relèvera le nombre de battements d'horloge entre 2 états permettant ensuite à la détermination de la fréquence. Enfin, il devra créer un TestBench afin de simuler le comportement du programme cité ci-dessus. 
 
