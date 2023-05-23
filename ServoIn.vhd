@@ -52,7 +52,7 @@ begin
 				
 		
 	begin
-		if RST = '0' then --le reset est à zéro 
+		if RST = '1' then --le reset est à un 
 			count :=0; -- le conteur est à zéro lors que l'on débute le process 
 			state <= s0; -- on se trouve alors dans l'état s0
 		elsif rising_edge(CLK) then --on rencontre un front montant de la part de la clock 
