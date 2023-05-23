@@ -33,13 +33,13 @@ Le signal à une période 20 ms comme on peut voir à l'image suivante :
 
 Ensuite, les pulsations doivent durer entre 1 et 2 ms, ce qui est confirmé dans les images suivantes : 
 
-![1ms](RTL_Simu_sPulsefromGPIO_1ms.png)
-![1,5ms](RTL_Simu_sPulsefromGPIO_15ms.png)
-![2ms](RTL_Simu_sPulsefromGPIO_2ms.png)
+![1ms](RTL_Simu_sPulsefromGPIO_1ms.PNG)
+![1,5ms](RTL_Simu_sPulsefromGPIO_15ms.PNG)
+![2ms](RTL_Simu_sPulsefromGPIO_2ms.PNG)
 
 Et donc grâce au compteur de 8 bits, on retrouve la valeur de notre angle : 
 
-![angle](RTL_Simu_Longueur_signal_Data_to_pin_reg_1_angle.png)
+![angle](RTL_Simu_Longueur_signal_Data_to_pin_reg_1_angle.PNG)
 
 Ainsi on peut observer la valeur de l'angle. 
 
