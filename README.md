@@ -18,7 +18,7 @@ De plus, il doit compléter le "FPGA_TOP" pour ajouter le bloc relatif à ce pro
 
 ![FPGA_TOP](modif_FPGA_TOP.png)
 
-Ensuite, il devra écrire un programme mettant en place un compteur et un lecteur de fréquence. Celui-ci est le lien entre les parties Hardware et Software. Le compteur relèvera le nombre de battements d'horloge entre 2 états permettant ensuite à la détermination de la fréquence. Voici le code commenté : 
+Ensuite, il devra écrire un programme mettant en place un compteur et un lecteur de fréquence. Celui-ci est le lien entre les parties Hardware et Software. Le compteur relèvera le nombre de battements d'horloge entre 2 états permettant ensuite à la détermination de la fréquence. Cela est démontré dans le fichier "ServoIn.vhd" dont voici le code commenté :  
 
 ![Driver1](driver1.png)
 
@@ -26,7 +26,7 @@ Ensuite, il devra écrire un programme mettant en place un compteur et un lecteu
 
 
 
-Enfin, il devra créer un TestBench afin de simuler le comportement du programme cité ci-dessus.
+Enfin, il devra créer un TestBench à partir du fichier "ServoIn_TB.vhd" afin de simuler le comportement du programme cité ci-dessus.
 
 Le signal à une période 20 ms comme on peut voir à l'image suivante : 
 ![période](rtlview_période20ms.png)
