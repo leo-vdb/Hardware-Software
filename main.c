@@ -12,8 +12,8 @@
 #include "dipsw_pio.h"
 #include "key_pio.h"
 #include "pio_reg_in.h"
-//#include "pio_reg_out.h"
-//#include "pio_reg_inout.h"
+#include "pio_reg_out.h"
+#include "pio_reg_inout.h"
 #include "led_gpio.h"
 #include "key_gpio.h"
 #include "driver.h"
@@ -23,15 +23,13 @@ void test_all();
 
 
 unsigned int DRIVER_read_pio_reg_inout();
-void write_pi_reg_inout( unsigned int pio_reg_inout );
-void write_pio_reg_out( unsigned int pio_reg_out );
+//void write_pi_reg_inout( unsigned int pio_reg_inout );
+//void write_pio_reg_out( unsigned int pio_reg_out );
 unsigned int DRIVER_read_pio_reg_in();
-void DRIVER_out_write_data( unsigned int data );	
+//void DRIVER_out_write_data( unsigned int data );	
 
-void *h2p_lw_reg3_addr;
-void *h2p_lw_reg4_addr;
 
-int main(int argc, char **argv) {
+int main() {
 	MMAP_open();
 	LEDR_setup();
 	DIPSW_setup();
@@ -39,23 +37,18 @@ int main(int argc, char **argv) {
 	LED_gpio_setup();
 	KEY_gpio_setup();
 	DRIVER_setup();
-
-	// while(1) {	
-		// test_all();
-	// }
-	MMAP_close();
+	
+	
 	int i =0;
 	int n= 0;
-	printf("Inserez le nombre de valeur de robert ");
-	scanf("%d", &n);
-	printf("La valeur que vous avez entrée est : %d\n", n);
 	
-	
-	for(i=0;i<n;i++) {
-		servo_robert();
-		sleep(1);
-	}
-	return 0;
+	printf("------DEMARRAGE----------\r\n")
+	while(1){
+	servo_robert(); //appel de la fonction qui est dans le driver.c   ATTENTION à bien déclarer la fonction dans driver.h
+}
+
+	MMAP_close();
+return;
 }
 
 void test_all() {	

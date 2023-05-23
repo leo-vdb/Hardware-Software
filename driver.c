@@ -49,10 +49,9 @@ unsigned int read_pio_reg_in() {
 }
 
 void servo_robert(){
-	printf("ok");
 	unsigned int robert = PIO_REG_IN_read();
 	int angle = robert*180/255;
-	printf("Angle:%d\n", angle);
+	printf("Angle:\n%d", angle);
 	usleep(100*1000);
 }
 /* 
