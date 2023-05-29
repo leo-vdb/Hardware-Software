@@ -25,7 +25,7 @@ Ensuite, il devra écrire un programme mettant en place un compteur et un lecteu
 ![Driver2](driver2.png)
 
 
-On peut d'ailleurs observer sur RTL view, une représentation de la connexion entre le wrapper et le driver :
+On peut d'ailleurs observer sur RTL view, une représentation de la connexion entre le driver, le wrapper et 
 
 ![RTLview](RTL_VIEW_DRIVER.png)
 
@@ -56,7 +56,7 @@ Dans cette partie, le responsable Software va devoir créer la foction permettan
 
 ![fonction](servo_robert.png)
 
-Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. De plus, le responsable devra connecter le processeur à l'ordinateur, d'y envoyer les programmes nécessaires et de le faire fonctionner. 
+Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. De plus, le responsable devra tester le programme en utilisant une carte PIC qui simulera un Servomoteur. Les valeurs de l'angle lue sur la carte PIC et sur l'ordinateur devront donc être égales si le code est correct. 
 
 
 
