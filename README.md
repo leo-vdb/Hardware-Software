@@ -14,7 +14,7 @@ Dans cette partie, le responsable Hardware va devoir choisir et implementer les 
 
 
 
-De plus, il doit compléter le "FPGA_TOP" pour ajouter le bloc relatif à ce projet contenant les I/O, clk, rst, ... utilisés comme dans la figure suivante :
+De plus, il doit compléter le "FPGA_TOP.v" pour ajouter le bloc relatif à ce projet contenant les I/O, clk, rst, ... utilisés comme dans la figure suivante :
 
 ![FPGA_TOP](modif_FPGA_TOP.png)
 
