@@ -25,6 +25,11 @@ Ensuite, il devra écrire un programme mettant en place un compteur et un lecteu
 ![Driver2](driver2.png)
 
 
+On peut d'ailleurs observer sur RTL view, une représentation de la connexion entre le wrapper et le driver :
+
+![RTLview](RTL_VIEW_DRIVER.png)
+
+
 
 Enfin, il devra créer un TestBench à partir du fichier "ServoIn_TB.vhd" afin de simuler le comportement du programme cité ci-dessus.
 
