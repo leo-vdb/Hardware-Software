@@ -62,7 +62,7 @@ Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher 
 
 
 
-De plus, le responsable devra tester le programme en utilisant une carte PIC qui simulera un Servomoteur. Les valeurs de l'angle lue sur la carte PIC et sur l'ordinateur devront donc être égales si le code est correct. 
+De plus, le responsable devra tester le programme en utilisant une carte PIC qui simulera un Servomoteur. Les valeurs de l'angle lue sur la carte PIC et sur l'ordinateur devront donc être égales. 
 
 
 
