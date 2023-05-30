@@ -25,7 +25,7 @@ Ensuite, il devra écrire un programme mettant en place un compteur et un lecteu
 ![Driver2](driver2.png)
 
 
-On peut d'ailleurs observer sur RTL view, une représentation de la connexion entre le driver, le wrapper et 
+On peut d'ailleurs observer sur RTL view, généré grâce à notre code, une représentation de la connexion entre le driver, le wrapper et 
 
 ![RTLview](RTL_VIEW_DRIVER.png)
 
