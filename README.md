@@ -20,9 +20,9 @@ De plus, il doit compléter le "FPGA_TOP.v" pour ajouter le bloc relatif à ce p
 
 Ensuite, il devra écrire un programme mettant en place un compteur et un lecteur de fréquence. Celui-ci est le lien entre les parties Hardware et Software. Le compteur relèvera le nombre de battements d'horloge entre 2 états permettant ensuite à la détermination de la fréquence. Cela est démontré dans le fichier "ServoIn.vhd" dont voici le code commenté :  
 
-![Driver1](driver.png)
+![Driver3](driver3.png)
 
-![Driver2](driver2.png)
+![Driver4](driver4.png)
 
 
 On peut d'ailleurs observer sur RTL view, généré grâce à notre code, une représentation de la connexion entre la FPGA, le wrapper, le driver et la SoC. 
