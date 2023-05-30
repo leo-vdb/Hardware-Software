@@ -44,7 +44,7 @@ Ensuite, les pulsations doivent durer entre 1 et 2 ms. En effet, les pulsations 
 
 Et donc grâce au compteur de 8 bits, on retrouve la valeur de notre angle : 
 
-![angle](RTL_Simu_Longueur_signal_Data_to_pin_reg_1_angle.PNG)
+![angle](RTL_Simu_Longueur_signal_Data_to_pin_reg_1_angle2.PNG)
 
 Ainsi on peut observer la valeur de l'angle. 
 
