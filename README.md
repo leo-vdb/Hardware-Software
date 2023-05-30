@@ -25,7 +25,10 @@ Ensuite, il devra écrire un programme mettant en place un compteur et un lecteu
 ![Driver2](driver2.png)
 
 
-On peut d'ailleurs observer sur RTL view, généré grâce à notre code, une représentation de la connexion entre le driver, le wrapper et 
+On peut d'ailleurs observer sur RTL view, généré grâce à notre code, une représentation de la connexion entre la FPGA, le wrapper, le driver et la SoC. 
+A gauche (en rouge), on peut observer la connexion de la FPGA avec le wrapper : "CLK", "RST" et et "from_GPIO_0_1_in" (le dernier est le pin par lequel vont arriver les données). Ensuite, une fois dans le wrapper, il y a la connexion entre le wrapper et le driver via les pins : "CLK", "RST" et "PULSE_from_GPIO_0_1_in". 
+Le 2ème nom des pins du driver change de celui du wrapper car il pourrait y avoir plusieurs drivers, il faut donc pouvoir différencier les pins des différents drivers, d'où le nom différent. Par contre, les pins la clock et le reset étant identique tout le temps, pas besoin de modifier leurs noms entre le wrapper et les drivers. 
+Ensuite, en sortie du driver, on observe les pins "DATA_to_pio_reg_in1", "DATA_to_pio_reg_in2", "LED_BUSY" et "LED_DRDY". Ensuite, la connexion de la sortie du driver avec la sortie du wrapper se fait au niveau des pins de sortie du wrapper nommés : "to_pio_reg_in", "to_pio_reg_inout" et "LED". IL est à noter qu'initialement, le pin "DATA_to_reg_in2" était utilisé pour transmettre la valeur de la fréquence mais finalement celle-ci est traitée directement au niveau de l'Hardware, dans le fichier "ServoIn.vhd". 
 
 ![RTLview](RTL_VIEW_DRIVER.png)
 
