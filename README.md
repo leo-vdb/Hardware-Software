@@ -56,7 +56,13 @@ Dans cette partie, le responsable Software va devoir créer la foction permettan
 
 ![fonction](servo_robert.png)
 
-Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. De plus, le responsable devra tester le programme en utilisant une carte PIC qui simulera un Servomoteur. Les valeurs de l'angle lue sur la carte PIC et sur l'ordinateur devront donc être égales si le code est correct. 
+Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. Voici le code : 
+![main.c](mainc.png)
+
+
+
+
+De plus, le responsable devra tester le programme en utilisant une carte PIC qui simulera un Servomoteur. Les valeurs de l'angle lue sur la carte PIC et sur l'ordinateur devront donc être égales si le code est correct. 
 
 
 
