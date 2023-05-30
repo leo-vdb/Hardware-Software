@@ -67,12 +67,14 @@ begin
                         when s1 => -- lorsque l'on est dans l'état s1 : S
                               count := count + 1; --incrémentation du conteur 
                                     if PULSE_from_GPIO_0_1_in='0'then -- lorsque le signal reçu est ré instancié à zéro alors : 
-                                          DATA_to_pio_reg_in_1 <= std_logic_vector(to_unsigned((count-min)*b/min,8)); -- on lit/sauvegarde la donnée (sur 8 bit) qui retranstrict la longueur du signal (normalement comprise entre 1ms et 2ms) 
+                                          DATA_to_pio_reg_in_1 <= std_logic_vector(to_unsigned((count-min)*b/min,8)); -- on lit/sauvegarde la donnée (sur 8 bit) qui 
+                                          --retranstrict la longueur du signal (normalement comprise entre 1ms et 2ms) 
                                           state <= s2; --on passe alors à l'état s2 (qui permettra de lire la valeur de la fréquence du signal) 
                                     
                                                                         
 --                                  -- Vérification de la longueur du signal grâce à l'allumage de LED_BUSY
-                                          if ((count >= ((1ms - (1 ms /b)) )) and (count <= ((2 ms+(1 ms /b)) ))) then -- la led s'allume si on vérifie que la longueur du signal se trouve bien entre 1ms-1/255 (borne inf) et 2ms+1/255 (borne sup)
+                                          if ((count >= ((1ms - (1 ms /b)) )) and (count <= ((2 ms+(1 ms /b)) ))) then -- la led s'allume si on vérifie que la longueur du signal 
+                                            --se trouve bien entre 1ms-1/255 (borne inf) et 2ms+1/255 (borne sup)
                             sLED_BUSY <= '1';
                                           else
                             sLED_BUSY <= '0';
@@ -84,7 +86,8 @@ begin
                         when s2 => --on se trouve dans l'état 2 : 
                               count := count + 1; --on continue à incrémenter le conteur 
                                     if PULSE_from_GPIO_0_1_in='1'then --le signal reçu de la part du servo sender se trouve à l'état "haut" 
-                                          DATA_to_pio_reg_in_2 <= std_logic_vector(to_unsigned((k/count),8)); --on stocke dans une 2nd variable/registre la valeur de la fréquence lue (que l'on reçoit de la part du servo sender)  
+                                          DATA_to_pio_reg_in_2 <= std_logic_vector(to_unsigned((k/count),8)); --on stocke dans une 2nd variable/registre la valeur
+                                          --de la fréquence lue (que l'on reçoit de la part du servo sender)  
                                           count:= 0;
                                           state <= s1;
 --                                        if RST = '1' then --le reset se trouve dans l'état haut : 
