@@ -59,7 +59,7 @@ Dans cette partie, le responsable Software va devoir créer la foction permettan
 Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. Voici le code : 
 ![main.c](mainc.png)
 
-En lisant le code, on peut voir que la fonction "servo_robert()" est appelée afin de lire les données venant du Hardware et les transformer en valeur d'angle. De plus, étant donné qu'il y a une boucle "while(1)", le code va afficher en continu la valeur d'angle lue jusqu'au moment où on débranche tout. 
+En lisant le code, on peut voir que la fonction "servo_robert()" est appelée afin de lire les données venant du Hardware et les transformer en valeur d'angle. De plus, étant donné qu'il y a une boucle "while(1)", le code va afficher en continu la valeur d'angle lue jusqu'au moment où on débranche tout. De plus, on peut observer que plusieurs fonctions sont appelées. Tout d'abord, il y a la la fonction MMAP_OPEN. Cette 
 
 
 
