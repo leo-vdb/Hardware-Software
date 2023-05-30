@@ -32,7 +32,7 @@ Ensuite, en sortie du driver, on observe les pins "DATA_to_pio_reg_in1", "DATA_t
 
 ![RTLview](RTL_VIEW_DRIVER.png)
 
-La connexion entre le wrapper et le driver peut d'ailleurs être observée dans le fichier . Voici le code en question : 
+La connexion entre le wrapper et le driver peut d'ailleurs être observée dans le fichier "wrapper.vhd" . Voici le code en question : 
 
 ![connexionwrapper](connexionwrapper.png)
 
