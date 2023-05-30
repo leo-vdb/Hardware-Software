@@ -36,7 +36,7 @@ Enfin, il devra créer un TestBench à partir du fichier "ServoIn_TB.vhd" afin d
 Le signal à une période 20 ms comme on peut voir à l'image suivante : 
 ![période](rtlview_période20ms.png)
 
-Ensuite, les pulsations doivent durer entre 1 et 2 ms, ce qui est confirmé dans les images suivantes : 
+Ensuite, les pulsations doivent durer entre 1 et 2 ms. En effet, les pulsations de 1ms correspondent à un angle de 0° et celles de 2ms correspondent à un angle de 180°. On peut d'ailleurs observer des pulsations de 1ms (0°), 1.5 ms (90°) et 2 ms (180°) dans les figures suivantes : 
 
 ![1ms](RTL_Simu_sPulsefromGPIO_1ms.PNG)
 ![1,5ms](RTL_Simu_sPulsefromGPIO_15ms.PNG)
