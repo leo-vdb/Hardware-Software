@@ -59,8 +59,7 @@ Dans cette partie, le responsable Software va devoir créer la foction permettan
 Ensuite, il va falloir modifier le fichier main.c, afin de permettre d'afficher les informations reçues par la partie Hardware. En d'autres mots, afficher la valeur de l'angle determinée grâce au compteur. Voici le code : 
 ![main.c](mainc.png)
 
-En lisant le code, on peut voir que la fonction "servo_robert()" est appelée afin de lire les données venant du Hardware et les transformer en valeur d'angle. De plus, étant donné qu'il y a une boucle "while(1)", le code va afficher en continu la valeur d'angle lue jusqu'au moment où on débranche tout. De plus, on peut observer que plusieurs fonctions sont appelées. Tout d'abord, il y a la la fonction MMAP_OPEN. Cette 
-
+En lisant le code, on peut voir que la fonction "servo_robert()" est appelée afin de lire les données venant du Hardware et les transformer en valeur d'angle. De plus, étant donné qu'il y a une boucle "while(1)", le code va afficher en continu la valeur d'angle lue jusqu'au moment où on débranche tout. De plus, on peut observer que plusieurs fonctions sont appelées. Tout d'abord, il y a la la fonction "MMAP_OPEN()". Celle-ci récupère les adresses des différents pins. Il y a aussi la fonction "DRIVER_SETUP()". Si on regarde comment est définie cette fonction dans le fichier "driver.c", on observe que d'autres fonctions sont appelées dans celle-ci : "PIO_REG_IN_setup()", "PIO_REG_OUT_setup()" et "PIO_REG_INOUT_setup()". Ces fonctions servent à récupérer les adresses formatées dans le fichier "mmap_hw_regs.c". 
 
 
 
