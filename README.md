@@ -32,6 +32,10 @@ Ensuite, en sortie du driver, on observe les pins "DATA_to_pio_reg_in1", "DATA_t
 
 ![RTLview](RTL_VIEW_DRIVER.png)
 
+La connexion entre le wrapper et le driver peut d'ailleurs être observée dans le fichier . Voici le code en question : 
+
+![connexionwrapper](connexionwrapper.png)
+
 
 
 Enfin, il devra créer un TestBench à partir du fichier "ServoIn_TB.vhd" afin de simuler le comportement du programme cité ci-dessus.
