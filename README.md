@@ -73,6 +73,10 @@ En lisant le code, on peut voir que la fonction "servo_robert()" est appelée af
 De plus, le responsable devra tester le programme en utilisant une carte PIC qui simulera un Servomoteur. Les valeurs de l'angle lue sur la carte PIC et sur l'ordinateur devront donc être égales. 
 
 
+Une vidéo tutoriel se trouve au lien suivent : https://youtu.be/jMbsdMfu_k8
+Bon visionnage
+
+
 
 
 
