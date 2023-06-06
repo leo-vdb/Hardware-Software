@@ -59,7 +59,6 @@ begin
                   case state is -- l'état dans lequel le système se trouve sera le suivant : 
                         when s0 =>
                               count :=0; -- incrémenter deja à s0 si ok ; on est en s0 <-> le conteur est à 0 
-                              --if ENABLE_IN = '1' then
                                     if PULSE_from_GPIO_0_1_in='1'then --si le signal que l'on reçoit est "haut" alors on passe à l'état s1
                                           state <= s1;
                                     end if;
@@ -90,11 +89,6 @@ begin
                                           --de la fréquence lue (que l'on reçoit de la part du servo sender)  
                                           count:= 0;
                                           state <= s1;
---                                        if RST = '1' then --le reset se trouve dans l'état haut : 
---                                              state <=s1; -- l'état du système repasse à l'état s1
---                                        else
---                                              state <= s0; --si le reset n'est pas à l'état haut lorsque l'on est sorti du process s2 alors on retourne à l'état s0 
-                                          --end if;
                                     end if;
                                     
                         when others => -- dans les autres cas, on reste en l'état s0 et le compteur est à zéro 
